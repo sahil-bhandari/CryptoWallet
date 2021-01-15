@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
 //    }
 
     private fun showWalletList(recyclerViewDataModel: RecyclerViewDataModel) {
-        viewModel.onSelectedData(recyclerViewDataModel)
         val walletData=recyclerViewDataModel.wallet
         val currencyData=recyclerViewDataModel.currency
         var currencyInfo=CurrencyInfo(
