@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/curve_edge_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:layout_margin="@dimen/cardview_default_radius"
+                    android:id="@+id/logoIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:minWidth="100dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/nameTV"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Name"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/balance"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance" />
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/balanceTV"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/currency"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency" />
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/currencyTV"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/priceLL"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/price"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_per_unit" />
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/priceTV"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_per_unit"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/totalLL"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/total"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total" />
+
+                <TextView
+                    android:padding="@dimen/cardview_default_radius"
+                    android:id="@+id/totalTV"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <Spinner
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:gravity="center_horizontal"
+        android:id="@+id/walletSelectionSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="65dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        android:id="@+id/walletRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layoutAnimation="@anim/layout_animation_slide_right"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>
