@@ -1,4 +1,4 @@
-# Bitpanda Android Test Application 
+# Android Test Application 
 
 #### The app has following packages:
 1. **arch**: Contains classes related to MVVM architecture.
@@ -13,7 +13,6 @@
 1. Hilt: https://developer.android.com/training/dependency-injection/hilt-android
 2. Glide To Vector You: https://jitpack.io/#2coffees1team/GlideToVectorYou
  
-#### Watch demo: https://youtu.be/fYzYrWeoz_w
 #### demo apk: https://drive.google.com/file/d/1qzF32EC2CkHqIRv3WiqUt868KzIlJoqz/view?usp=sharing
 
 ## If this project helps you in any way, show your love ❤️
